@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contractor Rate vs Salary: How to Convert (With Real Numbers)</title>
+    <meta name="description" content="Converting a salary to a contractor rate? Learn the real multiplier — it's not 1.0x. See exactly how to calculate equivalent contractor rates for any salary.">
+    <meta name="keywords" content="contractor rate vs salary, salary to contractor rate, convert salary to hourly contractor, 1099 vs W2 rate, freelance vs full time salary comparison, contractor rate multiplier">
+    <link rel="canonical" href="https://freelancerate.io/blog/contractor-rate-vs-salary.html">
+
+    <meta property="og:title" content="Contractor Rate vs Salary: How to Convert (With Real Numbers)">
+    <meta property="og:description" content="The real math behind converting a salary to an equivalent contractor rate. It's not what you think.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://freelancerate.io/blog/contractor-rate-vs-salary.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Contractor Rate vs Salary: How to Convert (With Real Numbers)",
+        "description": "Learn how to convert a salary to an equivalent contractor rate with the real multiplier.",
+        "author": { "@type": "Organization", "name": "FreelanceRate.io" },
+        "publisher": { "@type": "Organization", "name": "FreelanceRate.io" },
+        "datePublished": "2026-02-21",
+        "dateModified": "2026-02-21",
+        "mainEntityOfPage": "https://freelancerate.io/blog/contractor-rate-vs-salary.html"
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWN9TGEWXH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QWN9TGEWXH');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0C0C0E; --surface: #161619; --surface-2: #1E1E22; --surface-3: #26262B;
+            --border: #2A2A30; --text: #ECECEE; --text-secondary: #9898A0;
+            --text-muted: #68686F; --accent: #3BF686; --accent-dim: rgba(59, 246, 134, 0.12);
+            --danger: #F6503B; --warning: #F6C23B;
+            --font-display: 'Fraunces', serif; --font-body: 'DM Sans', sans-serif;
+            --radius: 12px; --radius-lg: 20px;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-body); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; z-index: 0; }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+        nav { padding: 20px 0; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: rgba(12, 12, 14, 0.85); backdrop-filter: blur(20px); z-index: 100; }
+        nav .nav-inner { max-width: 720px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
+        .logo span { color: var(--accent); }
+        nav a.nav-link { color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; font-weight: 500; }
+        nav a.nav-link:hover { color: var(--accent); }
+        .article-header { padding: 60px 0 40px; }
+        .breadcrumb { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 20px; }
+        .breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent); }
+        .article-header h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 16px; }
+        .article-header h1 em { font-style: italic; color: var(--accent); }
+        .article-meta { font-size: 0.85rem; color: var(--text-muted); }
+        .article-body { padding-bottom: 60px; }
+        .article-body p { font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 24px; }
+        .article-body h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--text); margin: 48px 0 16px; letter-spacing: -0.02em; }
+        .article-body h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--text); margin: 32px 0 12px; }
+        .article-body strong { color: var(--text); }
+        .article-body a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+        .article-body ul, .article-body ol { margin: 0 0 24px 24px; color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; }
+        .article-body li { margin-bottom: 8px; }
+        .callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius); padding: 24px 28px; margin: 32px 0; }
+        .callout p { margin-bottom: 0; font-size: 0.95rem; }
+        .callout strong { color: var(--accent); }
+        .vs-box { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 32px 0; }
+        @media (max-width: 640px) { .vs-box { grid-template-columns: 1fr; } }
+        .vs-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 24px; }
+        .vs-card h4 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; margin-bottom: 16px; }
+        .vs-card.employee h4 { color: var(--text-secondary); }
+        .vs-card.contractor h4 { color: var(--accent); }
+        .vs-card ul { list-style: none; margin: 0; padding: 0; font-size: 0.9rem; }
+        .vs-card ul li { padding: 6px 0; color: var(--text-secondary); }
+        .vs-card ul li::before { content: '✓ '; color: var(--accent); font-weight: 700; }
+        .vs-card.employee ul li::before { content: '✓ '; color: var(--text-muted); }
+        .example-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 0.95rem; }
+        .example-table th { text-align: left; padding: 12px 16px; border-bottom: 2px solid var(--accent); color: var(--text); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .example-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+        .example-table .highlight { color: var(--accent); font-weight: 600; }
+        .example-table .negative { color: var(--danger); font-weight: 600; }
+        .big-number { text-align: center; margin: 40px 0; }
+        .big-number .number { font-family: var(--font-display); font-size: 4rem; font-weight: 800; color: var(--accent); line-height: 1; }
+        .big-number .label { font-size: 1rem; color: var(--text-muted); margin-top: 8px; }
+        .cta-box { background: linear-gradient(135deg, rgba(59, 246, 134, 0.08) 0%, rgba(59, 246, 134, 0.02) 100%); border: 1px solid rgba(59, 246, 134, 0.2); border-radius: var(--radius-lg); padding: 40px; margin: 48px 0; text-align: center; }
+        .cta-box h3 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; margin-bottom: 12px; }
+        .cta-box p { color: var(--text-secondary); margin-bottom: 20px; font-size: 0.95rem; }
+        .cta-btn { display: inline-flex; background: var(--accent); color: var(--bg); font-family: var(--font-body); font-size: 0.95rem; font-weight: 700; padding: 14px 32px; border-radius: 100px; border: none; cursor: pointer; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+        .cta-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(59, 246, 134, 0.25); }
+        .ad-slot { background: var(--surface-2); border: 1px dashed var(--border); border-radius: var(--radius); padding: 24px; text-align: center; margin: 40px 0; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+        .ad-slot-text { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+        footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; }
+        footer p { font-size: 0.8rem; color: var(--text-muted); }
+        footer a { color: var(--text-secondary); text-decoration: none; }
+        footer a:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="/" class="logo">freelancerate<span>.io</span></a>
+        <a href="/" class="nav-link">← Back to Calculator</a>
+    </div>
+</nav>
+
+<article>
+    <div class="container">
+        <div class="article-header">
+            <div class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Contractor Rate vs Salary</div>
+            <h1>Contractor Rate vs Salary: How to Convert <em>(With Real Numbers)</em></h1>
+            <div class="article-meta">Published February 21, 2026 · 7 min read</div>
+        </div>
+
+        <div class="article-body">
+
+            <p>You're offered a contract role at $75/hour and you're trying to figure out if that's better than your $120,000 salary. Or maybe you're leaving a salaried job and need to know what hourly rate would keep you at the same income level. Either way, the conversion is <strong>not</strong> as simple as dividing your salary by 2,080.</p>
+
+            <p>The real multiplier is somewhere between 1.4x and 1.6x — meaning a $120K employee actually costs their employer $168,000–$192,000 in total compensation. That's the number you should be comparing against, not the base salary.</p>
+
+            <div class="ad-slot"><span class="ad-slot-text">Ad space</span></div>
+
+            <h2>What Employees Actually Cost</h2>
+
+            <p>When a company hires you as a W-2 employee at $120,000/year, their actual cost is significantly higher. Here's what they pay that you never see:</p>
+
+            <table class="example-table">
+                <thead>
+                    <tr><th>Cost Component</th><th>Amount</th><th>% of Salary</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Base salary</td><td>$120,000</td><td>100%</td></tr>
+                    <tr><td>Employer payroll taxes (FICA)</td><td>$9,180</td><td>7.65%</td></tr>
+                    <tr><td>Health insurance (employer portion)</td><td>$8,400</td><td>7%</td></tr>
+                    <tr><td>401(k) match (typical 4%)</td><td>$4,800</td><td>4%</td></tr>
+                    <tr><td>Paid time off (3 weeks)</td><td>$6,923</td><td>5.8%</td></tr>
+                    <tr><td>Paid holidays (10 days)</td><td>$4,615</td><td>3.8%</td></tr>
+                    <tr><td>Disability/life insurance</td><td>$1,200</td><td>1%</td></tr>
+                    <tr><td>Workers' comp, unemployment insurance</td><td>$2,400</td><td>2%</td></tr>
+                    <tr><td>Training, equipment, overhead</td><td>$3,000</td><td>2.5%</td></tr>
+                    <tr><td><strong>Total employer cost</strong></td><td class="highlight"><strong>$160,518</strong></td><td class="highlight"><strong>133.8%</strong></td></tr>
+                </tbody>
+            </table>
+
+            <p>So a $120K employee costs the company roughly $160K. That's the number a contractor rate needs to beat — not the base salary.</p>
+
+            <div class="big-number">
+                <div class="number">1.4x</div>
+                <div class="label">The minimum multiplier to convert salary to equivalent contractor rate</div>
+            </div>
+
+            <h2>The Quick Conversion Formula</h2>
+
+            <p>For a quick estimate:</p>
+
+            <div class="callout">
+                <p><strong>Contractor Rate = (Annual Salary × 1.4 to 1.6) ÷ 2,080 hours</strong></p>
+            </div>
+
+            <p>Using our $120K example:</p>
+
+            <ul>
+                <li>Conservative (1.4x): $120,000 × 1.4 = $168,000 ÷ 2,080 = <strong>$81/hour</strong></li>
+                <li>Moderate (1.5x): $120,000 × 1.5 = $180,000 ÷ 2,080 = <strong>$87/hour</strong></li>
+                <li>Comprehensive (1.6x): $120,000 × 1.6 = $192,000 ÷ 2,080 = <strong>$92/hour</strong></li>
+            </ul>
+
+            <p>So that $75/hour contract offer against a $120K salary? <strong>It's a pay cut.</strong> You'd need at least $81/hour to break even, and realistically $87–$92/hour to match total compensation.</p>
+
+            <h2>What Each Multiplier Covers</h2>
+
+            <p><strong>1.4x (bare minimum)</strong> covers payroll taxes and basic benefits. Use this if you already have health insurance through a spouse or if you're young with minimal benefit needs.</p>
+
+            <p><strong>1.5x (standard)</strong> covers taxes, health insurance, retirement, and some PTO equivalent. This is the most commonly cited multiplier and works for most situations.</p>
+
+            <p><strong>1.6x+ (comprehensive)</strong> covers everything above plus a profit margin, business expenses, and a buffer for gaps between contracts. Use this if you want true equivalence including job security considerations.</p>
+
+            <h2>Side-by-Side: $120K Employee vs Contractor</h2>
+
+            <div class="vs-box">
+                <div class="vs-card employee">
+                    <h4>W-2 Employee @ $120K</h4>
+                    <ul>
+                        <li>$120,000 salary</li>
+                        <li>Employer pays half FICA</li>
+                        <li>Health insurance provided</li>
+                        <li>401(k) with 4% match</li>
+                        <li>3 weeks paid vacation</li>
+                        <li>10 paid holidays</li>
+                        <li>Disability insurance</li>
+                        <li>Equipment provided</li>
+                        <li>Job security / severance</li>
+                    </ul>
+                </div>
+                <div class="vs-card contractor">
+                    <h4>1099 Contractor @ $87/hr</h4>
+                    <ul>
+                        <li>~$180,960/yr (2,080 hrs)</li>
+                        <li>You pay full 15.3% SE tax</li>
+                        <li>You buy your own (~$7,200/yr)</li>
+                        <li>You fund your own retirement</li>
+                        <li>Time off = $0 income</li>
+                        <li>No paid holidays</li>
+                        <li>You buy your own</li>
+                        <li>You buy your own</li>
+                        <li>Contract can end anytime</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>When you see it laid out like this, the "higher number" on the contractor side starts to look a lot more even. And that's the point — <strong>a contractor charging $87/hour is not making more than a $120K employee. They're making roughly the same.</strong></p>
+
+            <div class="ad-slot"><span class="ad-slot-text">Ad space</span></div>
+
+            <h2>Common Salary-to-Rate Conversions</h2>
+
+            <p>Here's a quick reference table using the 1.5x multiplier:</p>
+
+            <table class="example-table">
+                <thead>
+                    <tr><th>Annual Salary</th><th>Equivalent Hourly Rate</th><th>Equivalent Day Rate</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>$60,000</td><td class="highlight">$43/hr</td><td>$346/day</td></tr>
+                    <tr><td>$75,000</td><td class="highlight">$54/hr</td><td>$433/day</td></tr>
+                    <tr><td>$90,000</td><td class="highlight">$65/hr</td><td>$519/day</td></tr>
+                    <tr><td>$100,000</td><td class="highlight">$72/hr</td><td>$577/day</td></tr>
+                    <tr><td>$120,000</td><td class="highlight">$87/hr</td><td>$692/day</td></tr>
+                    <tr><td>$150,000</td><td class="highlight">$108/hr</td><td>$865/day</td></tr>
+                    <tr><td>$175,000</td><td class="highlight">$126/hr</td><td>$1,010/day</td></tr>
+                    <tr><td>$200,000</td><td class="highlight">$144/hr</td><td>$1,154/day</td></tr>
+                </tbody>
+            </table>
+
+            <h2>When Contracting Actually Pays More</h2>
+
+            <p>Contracting isn't always a wash. It genuinely pays more when:</p>
+
+            <ul>
+                <li><strong>The rate is well above the multiplier.</strong> If you're offered $120/hour against a $120K salary, that's a 1.92x multiplier — you'll come out ahead even after covering all your own benefits.</li>
+                <li><strong>You can write off significant expenses.</strong> Contractors get deductions employees don't — home office, equipment, mileage, professional development, health insurance premiums.</li>
+                <li><strong>You work for multiple clients.</strong> Diversified income is more stable than depending on one employer, and you can fill gaps between contracts with other work.</li>
+                <li><strong>You're in a high-demand specialty.</strong> Companies pay premium rates for niche skills they can't easily hire for full-time.</li>
+            </ul>
+
+            <h2>When to Stay Salaried</h2>
+
+            <p>Salaried employment is the better financial choice when:</p>
+
+            <ul>
+                <li>The contract rate is below 1.4x your salary equivalent</li>
+                <li>You have significant medical needs and value employer-subsidized health insurance</li>
+                <li>You value stability and predictable income over flexibility</li>
+                <li>The company offers equity, RSUs, or bonuses that substantially increase total compensation</li>
+                <li>You don't have the discipline to set aside money for taxes and retirement</li>
+            </ul>
+
+            <div class="cta-box">
+                <h3>Get Your Exact Number</h3>
+                <p>Don't rely on multipliers — calculate your precise contractor rate based on your actual expenses, tax situation, and income goals.</p>
+                <a href="/" class="cta-btn">Use the Free Calculator →</a>
+            </div>
+
+            <h2>The Bottom Line</h2>
+
+            <p>The #1 mistake people make when comparing contractor rates to salaries is forgetting the hidden 30–40% that employers spend on top of your salary. When someone offers you a "great" contractor rate that's only 10% above your salary-per-hour, you're actually taking a pay cut.</p>
+
+            <p>Use the 1.5x multiplier as your baseline, adjust up or down based on your specific benefits needs, and never accept a contract rate that doesn't at least match the 1.4x minimum. Your future self — and your tax bill — will thank you.</p>
+
+            <div class="ad-slot"><span class="ad-slot-text">Ad space</span></div>
+
+        </div>
+    </div>
+</article>
+
+<footer>
+    <div class="container">
+        <p style="margin-bottom: 8px;"><a href="/" class="logo" style="font-size: 1rem;">freelancerate<span style="color: var(--accent);">.io</span></a></p>
+        <p>Free freelance rate calculator. No signup. No tracking. Just math.</p>
+        <p style="margin-top: 12px;">© <script>document.write(new Date().getFullYear())</script> FreelanceRate.io</p>
+    </div>
+</footer>
+
+</body>
+</html>
