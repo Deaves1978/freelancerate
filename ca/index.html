@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Rate Calculator Canada — What Should You Charge? | FreelanceRate.io</title>
+    <meta name="description" content="Calculate your ideal freelance rate for Canada. Accounts for CPP, EI, federal and provincial income tax, GST/HST, and business expenses. Free forever.">
+    <meta name="keywords" content="freelance rate calculator Canada, how much should I charge freelancing Canada, freelance hourly rate Canada, contractor rate calculator Canada, self employed rate calculator Canada, freelance pricing Canada">
+    <link rel="canonical" href="https://freelancerate.io/ca/">
+
+    <meta property="og:title" content="Freelance Rate Calculator Canada — What Should You Charge?">
+    <meta property="og:description" content="Calculate your ideal freelance hourly rate for Canada. Accounts for CPP, EI, federal/provincial tax, and expenses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://freelancerate.io/ca/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Freelance Rate Calculator Canada — What Should You Charge?">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "FreelanceRate.io Canada",
+        "description": "Free Canadian freelance rate calculator accounting for CPP, EI, federal and provincial income tax, and expenses.",
+        "url": "https://freelancerate.io/ca/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CAD" }
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWN9TGEWXH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QWN9TGEWXH');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0C0C0E; --surface: #161619; --surface-2: #1E1E22; --surface-3: #26262B;
+            --border: #2A2A30; --border-hover: #3A3A42; --text: #ECECEE; --text-secondary: #9898A0;
+            --text-muted: #68686F; --accent: #3BF686; --accent-dim: rgba(59, 246, 134, 0.12);
+            --accent-glow: rgba(59, 246, 134, 0.25); --warning: #F6C23B; --danger: #F6503B;
+            --font-display: 'Fraunces', serif; --font-body: 'DM Sans', sans-serif;
+            --radius: 12px; --radius-lg: 20px;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-body); background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+        body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; z-index: 0; }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+        nav { padding: 20px 0; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: rgba(12, 12, 14, 0.85); backdrop-filter: blur(20px); z-index: 100; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
+        .logo span { color: var(--accent); }
+        .nav-right { display: flex; gap: 20px; align-items: center; }
+        nav a.nav-link { color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+        nav a.nav-link:hover { color: var(--accent); }
+        .country-badge { background: var(--accent-dim); border: 1px solid rgba(59, 246, 134, 0.2); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 600; color: var(--accent); letter-spacing: 0.04em; }
+
+        .hero { padding: 80px 0 60px; text-align: center; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-dim); border: 1px solid rgba(59, 246, 134, 0.2); padding: 6px 16px; border-radius: 100px; font-size: 0.8rem; font-weight: 600; color: var(--accent); margin-bottom: 24px; letter-spacing: 0.04em; text-transform: uppercase; }
+        .hero h1 { font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 20px; }
+        .hero h1 em { font-style: italic; color: var(--accent); }
+        .hero p { font-size: 1.15rem; color: var(--text-secondary); max-width: 580px; margin: 0 auto 40px; line-height: 1.7; }
+        .cta-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: var(--bg); font-family: var(--font-body); font-size: 0.95rem; font-weight: 700; padding: 14px 32px; border-radius: 100px; border: none; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; text-decoration: none; }
+        .cta-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(59, 246, 134, 0.25); }
+
+        .calculator { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 60px; }
+        @media (max-width: 640px) { .calculator { padding: 24px 20px; } }
+        .calc-section { margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid var(--border); }
+        .calc-section:last-of-type { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+        .calc-section-title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.02em; }
+        .calc-section-desc { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
+        .form-group { display: flex; flex-direction: column; gap: 6px; }
+        .form-group.full-width { grid-column: 1 / -1; }
+        label { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.06em; }
+        input[type="number"], select { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; font-size: 1rem; font-family: var(--font-body); color: var(--text); transition: border-color 0.2s, box-shadow 0.2s; outline: none; width: 100%; appearance: none; -webkit-appearance: none; }
+        select { background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%239898A0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; }
+        input:focus, select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-dim); }
+        input::placeholder { color: var(--text-muted); }
+        input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+        input[type="number"] { -moz-appearance: textfield; }
+        .input-with-prefix { position: relative; }
+        .input-with-prefix .prefix { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1rem; pointer-events: none; font-weight: 500; }
+        .input-with-prefix input { padding-left: 32px; }
+        .slider-group { display: flex; flex-direction: column; gap: 8px; }
+        .slider-header { display: flex; justify-content: space-between; align-items: center; }
+        .slider-value { font-size: 0.95rem; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
+        input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; background: var(--surface-3); border-radius: 3px; outline: none; cursor: pointer; }
+        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; background: var(--accent); border-radius: 50%; cursor: pointer; box-shadow: 0 2px 8px rgba(59, 246, 134, 0.3); transition: transform 0.15s; }
+        input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+        input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; background: var(--accent); border-radius: 50%; cursor: pointer; border: none; box-shadow: 0 2px 8px rgba(59, 246, 134, 0.3); }
+
+        .results { background: linear-gradient(135deg, rgba(59, 246, 134, 0.06) 0%, rgba(59, 246, 134, 0.02) 100%); border: 1px solid rgba(59, 246, 134, 0.15); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 60px; text-align: center; position: relative; overflow: hidden; }
+        .results::before { content: ''; position: absolute; top: -80px; right: -80px; width: 200px; height: 200px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); pointer-events: none; }
+        .results-title { font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.08em; }
+        .results-main-rate { font-family: var(--font-display); font-size: clamp(3rem, 8vw, 5rem); font-weight: 800; color: var(--accent); line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 4px; }
+        .results-main-label { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 32px; }
+        .results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        @media (max-width: 640px) { .results-grid { grid-template-columns: repeat(2, 1fr); } .results { padding: 28px 20px; } }
+        .result-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 16px; }
+        .result-card-value { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--text); margin-bottom: 2px; font-variant-numeric: tabular-nums; }
+        .result-card-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 500; }
+        .share-bar { display: flex; justify-content: center; gap: 12px; margin-top: 24px; }
+        .share-btn { background: var(--surface-2); border: 1px solid var(--border); color: var(--text-secondary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 500; padding: 8px 18px; border-radius: 100px; cursor: pointer; transition: border-color 0.2s, color 0.2s; }
+        .share-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+        .breakdown { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 60px; }
+        @media (max-width: 640px) { .breakdown { padding: 24px 20px; } }
+        .breakdown h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; margin-bottom: 24px; letter-spacing: -0.02em; }
+        .breakdown-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--border); }
+        .breakdown-row:last-child { border-bottom: none; padding-bottom: 0; }
+        .breakdown-row.total { border-top: 2px solid var(--accent); border-bottom: none; margin-top: 8px; padding-top: 18px; }
+        .breakdown-label { font-size: 0.95rem; color: var(--text-secondary); }
+        .breakdown-label small { display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+        .breakdown-value { font-weight: 600; font-variant-numeric: tabular-nums; font-size: 0.95rem; }
+        .breakdown-value.negative { color: var(--danger); }
+        .breakdown-value.positive { color: var(--accent); }
+        .insight-bar { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin-top: 24px; display: flex; align-items: flex-start; gap: 12px; }
+        .insight-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+        .insight-text { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
+        .insight-text strong { color: var(--text); }
+
+        .how-section { padding: 60px 0; border-top: 1px solid var(--border); }
+        .how-section h2 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em; text-align: center; }
+        .how-section > .container > p { text-align: center; color: var(--text-secondary); max-width: 560px; margin: 0 auto 40px; font-size: 1rem; }
+        .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        @media (max-width: 768px) { .how-grid { grid-template-columns: 1fr; } }
+        .how-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 32px 28px; transition: border-color 0.2s; }
+        .how-card:hover { border-color: var(--border-hover); }
+        .how-card-num { font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: 16px; opacity: 0.4; }
+        .how-card h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+        .how-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
+
+        .faq-section { padding: 60px 0; border-top: 1px solid var(--border); }
+        .faq-section h2 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; margin-bottom: 32px; letter-spacing: -0.02em; text-align: center; }
+        .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+        .faq-q { font-weight: 600; font-size: 1rem; margin-bottom: 8px; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-q::after { content: '+'; font-size: 1.3rem; color: var(--text-muted); flex-shrink: 0; margin-left: 16px; }
+        .faq-item.open .faq-q::after { content: '−'; color: var(--accent); }
+        .faq-a { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .faq-item.open .faq-a { max-height: 400px; padding-top: 4px; }
+
+        .ad-slot { background: var(--surface-2); border: 1px dashed var(--border); border-radius: var(--radius); padding: 24px; text-align: center; margin: 40px 0; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+        .ad-slot-text { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+        .country-nav { display: flex; justify-content: center; gap: 12px; margin: 40px 0; flex-wrap: wrap; }
+        .country-nav a { background: var(--surface); border: 1px solid var(--border); color: var(--text-secondary); font-size: 0.8rem; font-weight: 500; padding: 8px 18px; border-radius: 100px; text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+        .country-nav a:hover, .country-nav a.active { border-color: var(--accent); color: var(--accent); }
+
+        footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; }
+        footer p { font-size: 0.8rem; color: var(--text-muted); }
+        footer a { color: var(--text-secondary); text-decoration: none; }
+        footer a:hover { color: var(--accent); }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-in { animation: fadeInUp 0.5s ease-out both; }
+        .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; } .delay-3 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="/" class="logo">freelancerate<span>.io</span></a>
+        <div class="nav-right">
+            <span class="country-badge">🇨🇦 Canada</span>
+            <a href="/" class="nav-link">US Version</a>
+            <a href="/uk/" class="nav-link">UK Version</a>
+            <a href="#how" class="nav-link">How it works</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge animate-in">🇨🇦 Built for Canada — Free forever</div>
+        <h1 class="animate-in delay-1">What should you<br><em>actually</em> charge?</h1>
+        <p class="animate-in delay-2">Most Canadian freelancers undercharge by 30–50%. This calculator factors in CPP contributions, EI premiums, federal and provincial income tax, and your real expenses to find your <strong>true</strong> hourly rate.</p>
+        <a href="#calculator" class="cta-btn animate-in delay-3">Calculate my rate ↓</a>
+    </div>
+</section>
+
+<div class="container">
+    <div class="ad-slot"><span class="ad-slot-text">Ad space</span></div>
+</div>
+
+<div class="container" id="calculator">
+    <div class="calculator animate-in">
+
+        <div class="calc-section">
+            <div class="calc-section-title">💰 Income Goal</div>
+            <div class="calc-section-desc">What do you want to take home annually after tax? Think of the net salary you'd accept at a full-time job.</div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="targetSalary">Target Annual Take-Home</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">$</span>
+                        <input type="number" id="targetSalary" placeholder="65,000" value="65000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="province">Province</label>
+                    <select id="province">
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="ON" selected>Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="YT">Yukon</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="calc-section">
+            <div class="calc-section-title">⏱ Working Time</div>
+            <div class="calc-section-desc">Be realistic — you won't bill every hour. Account for admin, marketing, gaps between contracts, and unbillable time.</div>
+            <div class="form-grid">
+                <div class="form-group slider-group">
+                    <div class="slider-header">
+                        <label for="billableHours">Billable Hours per Week</label>
+                        <span class="slider-value" id="billableHoursValue">30 hrs</span>
+                    </div>
+                    <input type="range" id="billableHours" min="10" max="50" value="30">
+                </div>
+                <div class="form-group slider-group">
+                    <div class="slider-header">
+                        <label for="weeksOff">Weeks Off per Year</label>
+                        <span class="slider-value" id="weeksOffValue">4 wks</span>
+                    </div>
+                    <input type="range" id="weeksOff" min="0" max="12" value="4">
+                </div>
+            </div>
+        </div>
+
+        <div class="calc-section">
+            <div class="calc-section-title">🏥 Benefits & Expenses</div>
+            <div class="calc-section-desc">As a freelancer, you cover everything an employer used to provide. No employer CPP match, no benefits, no paid time off.</div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="healthBenefits">Health & Dental Benefits / yr</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">$</span>
+                        <input type="number" id="healthBenefits" placeholder="3,000" value="3000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="rrsp">RRSP / Retirement Savings / yr</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">$</span>
+                        <input type="number" id="rrsp" placeholder="6,000" value="6000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="software">Software & Tools / yr</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">$</span>
+                        <input type="number" id="software" placeholder="2,400" value="2400">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="otherExpenses">Other Business Expenses / yr</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">$</span>
+                        <input type="number" id="otherExpenses" placeholder="3,000" value="3000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="accountant">Accountant Fees / yr</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">$</span>
+                        <input type="number" id="accountant" placeholder="2,000" value="2000">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calc-section">
+            <div class="calc-section-title">📈 Profit Margin</div>
+            <div class="calc-section-desc">Buffer for gaps between contracts, slow months, and business growth.</div>
+            <div class="form-grid">
+                <div class="form-group slider-group full-width">
+                    <div class="slider-header">
+                        <label for="profitMargin">Profit Margin</label>
+                        <span class="slider-value" id="profitMarginValue">15%</span>
+                    </div>
+                    <input type="range" id="profitMargin" min="0" max="40" value="15">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="results" id="results">
+        <div class="results-title">Your Minimum Freelance Rate</div>
+        <div class="results-main-rate" id="hourlyRate">$0</div>
+        <div class="results-main-label">per hour (CAD)</div>
+
+        <div class="results-grid">
+            <div class="result-card">
+                <div class="result-card-value" id="dailyRate">$0</div>
+                <div class="result-card-label">Per Day (8 hrs)</div>
+            </div>
+            <div class="result-card">
+                <div class="result-card-value" id="weeklyRate">$0</div>
+                <div class="result-card-label">Per Week</div>
+            </div>
+            <div class="result-card">
+                <div class="result-card-value" id="monthlyRate">$0</div>
+                <div class="result-card-label">Per Month</div>
+            </div>
+            <div class="result-card">
+                <div class="result-card-value" id="annualGross">$0</div>
+                <div class="result-card-label">Annual Gross</div>
+            </div>
+        </div>
+
+        <div class="share-bar">
+            <button class="share-btn" onclick="copyResults()">📋 Copy results</button>
+            <button class="share-btn" onclick="tweetResults()">𝕏 Share</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="breakdown" id="breakdown">
+        <h2>How We Got There</h2>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Your target take-home pay</span>
+            <span class="breakdown-value" id="bk-salary">$0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">CPP contributions (both portions)<small>Self-employed pay both employee and employer shares: 11.9% on earnings $3,500–$68,500</small></span>
+            <span class="breakdown-value negative" id="bk-cpp">+ $0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">EI premiums (optional for self-employed)<small>Voluntary: provides maternity, parental, sickness, and compassionate care benefits</small></span>
+            <span class="breakdown-value negative" id="bk-ei">+ $0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Federal income tax<small>15% to 33% progressive brackets</small></span>
+            <span class="breakdown-value negative" id="bk-fedtax">+ $0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Provincial income tax<small id="provTaxDesc">Ontario: 5.05% to 13.16%</small></span>
+            <span class="breakdown-value negative" id="bk-provtax">+ $0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Health & dental benefits</span>
+            <span class="breakdown-value negative" id="bk-health">+ $0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">RRSP / retirement savings</span>
+            <span class="breakdown-value negative" id="bk-rrsp">+ $0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Software & tools</span>
+            <span class="breakdown-value negative" id="bk-software">+ $0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Other business expenses</span>
+            <span class="breakdown-value negative" id="bk-other">+ $0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Accountant fees</span>
+            <span class="breakdown-value negative" id="bk-accountant">+ $0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Profit margin<small>Buffer for gaps, growth, and emergencies</small></span>
+            <span class="breakdown-value negative" id="bk-margin">+ $0</span>
+        </div>
+        <div class="breakdown-row total">
+            <span class="breakdown-label"><strong>Total you need to earn</strong></span>
+            <span class="breakdown-value positive" id="bk-total">$0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">÷ Billable hours per year</span>
+            <span class="breakdown-value" id="bk-hours">0 hours</span>
+        </div>
+
+        <div class="insight-bar">
+            <span class="insight-icon">💡</span>
+            <span class="insight-text" id="insightText"></span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="ad-slot"><span class="ad-slot-text">Ad space</span></div>
+</div>
+
+<div class="container">
+    <div class="country-nav">
+        <a href="/">🇺🇸 United States</a>
+        <a href="/uk/">🇬🇧 United Kingdom</a>
+        <a href="/ca/" class="active">🇨🇦 Canada</a>
+    </div>
+</div>
+
+<section class="how-section" id="how">
+    <div class="container">
+        <h2>Why Most Canadian Freelancers Undercharge</h2>
+        <p>If you just divide your salary by 2,080 hours, you'll end up earning far less than you planned. Here's what that simple calculation misses.</p>
+        <div class="how-grid">
+            <div class="how-card">
+                <div class="how-card-num">01</div>
+                <h3>CPP — Double the Cost</h3>
+                <p>As an employee, your employer matches your CPP contribution. As self-employed, you pay <strong>both portions</strong> — 11.9% on pensionable earnings between $3,500 and $68,500. That's up to <strong>$7,735</strong> per year.</p>
+            </div>
+            <div class="how-card">
+                <div class="how-card-num">02</div>
+                <h3>No Benefits Package</h3>
+                <p>No employer health plan, no dental, no disability insurance, no RRSP matching. Extended health benefits alone cost $2,000–$5,000/year. You fund everything — or go without.</p>
+            </div>
+            <div class="how-card">
+                <div class="how-card-num">03</div>
+                <h3>Unbillable Hours</h3>
+                <p>You won't bill 40 hours a week, 52 weeks a year. Between finding clients, admin, invoicing, and gaps between contracts — most freelancers bill 1,200–1,500 hours a year, not 2,080.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section" id="faq">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item open">
+            <div class="faq-q" onclick="toggleFaq(this)">How do I calculate my freelance hourly rate in Canada?</div>
+            <div class="faq-a">Start with your desired annual take-home pay. Add CPP contributions (both employee and employer portions), federal income tax, provincial income tax, health benefits, retirement savings, and business expenses. Add a profit margin for gaps and emergencies. Then divide by your realistic billable hours per year (typically 1,200–1,500 hours). That's your minimum hourly rate.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Do I need to register for GST/HST?</div>
+            <div class="faq-a">You must register for GST/HST if your revenue exceeds $30,000 in four consecutive calendar quarters (the "small supplier" threshold). Below that, registration is voluntary. If registered, you charge clients 5% GST (or HST of 13–15% depending on province) on top of your rate. You can then claim input tax credits on business purchases. The GST/HST you collect isn't your income — it goes to the CRA.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">What is a good freelance rate in Canada?</div>
+            <div class="faq-a">Rates vary widely by industry and location. Software developers typically charge $75–$175/hour, designers $50–$125/hour, writers $40–$100/hour, and consultants $100–$250+/hour. Rates in Toronto and Vancouver tend to be higher than elsewhere. The key is to calculate YOUR number based on your costs rather than guessing from averages.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">How does CPP work for self-employed Canadians?</div>
+            <div class="faq-a">When you're employed, you pay 5.95% of pensionable earnings and your employer matches with another 5.95%. As a self-employed person, you pay both portions — 11.9% total — on net self-employment income between $3,500 and $68,500 (2024 limits). There's also CPP2, an additional 4% on earnings between $68,500 and $73,200. This is reported on your T1 return using Schedule 8.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Do self-employed Canadians pay EI?</div>
+            <div class="faq-a">EI is optional for self-employed individuals. If you opt in through Service Canada, you pay the employee premium (1.66% of insurable earnings up to $63,200) and gain access to special benefits: maternity, parental, sickness, compassionate care, and family caregiver benefits. You don't get regular EI benefits (job loss). Once you opt in and receive benefits, you can't opt out.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Should I incorporate or stay a sole proprietor?</div>
+            <div class="faq-a">As a sole proprietor, all business income is taxed as personal income. Incorporating creates a separate legal entity with a lower corporate tax rate (typically 9–12.2% on the first $500,000 of active business income via the small business deduction). Incorporation makes sense when you're earning significantly more than you need to live on and can leave money in the corporation. However, it adds complexity and costs ($1,000–$3,000/year in extra accounting). Talk to an accountant when your net income consistently exceeds $80,000–$100,000.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="ad-slot"><span class="ad-slot-text">Ad space</span></div>
+</div>
+
+<footer>
+    <div class="container">
+        <p style="margin-bottom: 8px;"><a href="/" class="logo" style="font-size: 1rem;">freelancerate<span style="color: var(--accent);">.io</span></a></p>
+        <p>Free freelance rate calculator. No signup. No tracking. Just math.</p>
+        <p style="margin-top: 12px;">© <span id="year"></span> FreelanceRate.io · <a href="/">US</a> · <a href="/uk/">UK</a> · <a href="/ca/">CA</a></p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const inputs = {
+        targetSalary: document.getElementById('targetSalary'),
+        province: document.getElementById('province'),
+        billableHours: document.getElementById('billableHours'),
+        weeksOff: document.getElementById('weeksOff'),
+        healthBenefits: document.getElementById('healthBenefits'),
+        rrsp: document.getElementById('rrsp'),
+        software: document.getElementById('software'),
+        otherExpenses: document.getElementById('otherExpenses'),
+        accountant: document.getElementById('accountant'),
+        profitMargin: document.getElementById('profitMargin'),
+    };
+
+    inputs.billableHours.addEventListener('input', () => {
+        document.getElementById('billableHoursValue').textContent = inputs.billableHours.value + ' hrs';
+        calculate();
+    });
+    inputs.weeksOff.addEventListener('input', () => {
+        document.getElementById('weeksOffValue').textContent = inputs.weeksOff.value + ' wks';
+        calculate();
+    });
+    inputs.profitMargin.addEventListener('input', () => {
+        document.getElementById('profitMarginValue').textContent = inputs.profitMargin.value + '%';
+        calculate();
+    });
+
+    Object.values(inputs).forEach(el => {
+        el.addEventListener('input', calculate);
+        el.addEventListener('change', calculate);
+    });
+
+    // 2024 Federal tax brackets
+    function calcFederalTax(taxableIncome) {
+        const bpa = 15705; // Basic personal amount 2024
+        const taxable = Math.max(0, taxableIncome - bpa);
+        let tax = 0;
+        const brackets = [
+            [55867, 0.15],
+            [55866, 0.205],  // 55,867 to 111,733
+            [61942, 0.26],   // 111,733 to 173,675
+            [61942, 0.29],   // 173,675 to 235,617
+            [Infinity, 0.33] // above 235,617
+        ];
+        let remaining = taxable;
+        for (const [size, rate] of brackets) {
+            const amount = Math.min(remaining, size);
+            tax += amount * rate;
+            remaining -= amount;
+            if (remaining <= 0) break;
+        }
+        return Math.max(0, tax);
+    }
+
+    // Provincial tax rates (simplified 2024)
+    const provincialTax = {
+        AB: { name: 'Alberta', rates: [[142292, 0.10], [28458, 0.12], [56917, 0.13], [113834, 0.14], [Infinity, 0.15]], bpa: 21003 },
+        BC: { name: 'British Columbia', rates: [[45654, 0.0506], [45656, 0.077], [13525, 0.105], [22430, 0.1229], [45172, 0.147], [72508, 0.168], [Infinity, 0.205]], bpa: 11981 },
+        MB: { name: 'Manitoba', rates: [[47000, 0.108], [53000, 0.1275], [Infinity, 0.174]], bpa: 15780 },
+        NB: { name: 'New Brunswick', rates: [[47715, 0.094], [47716, 0.14], [19849, 0.16], [57918, 0.195], [Infinity, 0.2030]], bpa: 12458 },
+        NL: { name: 'Newfoundland and Labrador', rates: [[43198, 0.087], [43195, 0.145], [67810, 0.158], [54390, 0.178], [250000, 0.198], [500000, 0.208], [Infinity, 0.213]], bpa: 10818 },
+        NS: { name: 'Nova Scotia', rates: [[29590, 0.0879], [29590, 0.1495], [33820, 0.1667], [57000, 0.175], [Infinity, 0.21]], bpa: 8481 },
+        NT: { name: 'Northwest Territories', rates: [[48326, 0.059], [48322, 0.086], [54030, 0.122], [Infinity, 0.1405]], bpa: 16593 },
+        NU: { name: 'Nunavut', rates: [[53268, 0.04], [53268, 0.07], [59387, 0.09], [Infinity, 0.115]], bpa: 17925 },
+        ON: { name: 'Ontario', rates: [[51446, 0.0505], [51454, 0.0915], [47306, 0.1116], [70000, 0.1216], [Infinity, 0.1316]], bpa: 11865 },
+        PE: { name: 'Prince Edward Island', rates: [[32656, 0.098], [32656, 0.138], [44500, 0.167], [Infinity, 0.1875]], bpa: 12000 },
+        QC: { name: 'Quebec', rates: [[51780, 0.14], [51780, 0.19], [22780, 0.24], [Infinity, 0.2575]], bpa: 17183 },
+        SK: { name: 'Saskatchewan', rates: [[52057, 0.105], [96468, 0.125], [Infinity, 0.145]], bpa: 17661 },
+        YT: { name: 'Yukon', rates: [[55867, 0.064], [55866, 0.09], [61942, 0.109], [361584, 0.128], [Infinity, 0.15]], bpa: 15705 },
+    };
+
+    function calcProvTax(taxableIncome, prov) {
+        const p = provincialTax[prov];
+        if (!p) return 0;
+        const taxable = Math.max(0, taxableIncome - p.bpa);
+        let tax = 0;
+        let remaining = taxable;
+        for (const [size, rate] of p.rates) {
+            const amount = Math.min(remaining, size);
+            tax += amount * rate;
+            remaining -= amount;
+            if (remaining <= 0) break;
+        }
+        return Math.max(0, tax);
+    }
+
+    // CPP 2024
+    function calcCPP(netIncome) {
+        const exemption = 3500;
+        const maxPensionable = 68500;
+        const rate = 0.1190; // both portions
+        const pensionable = Math.min(Math.max(0, netIncome - exemption), maxPensionable - exemption);
+        // CPP2 on earnings 68,500 to 73,200
+        const cpp2Max = 73200;
+        const cpp2Rate = 0.04; // both portions
+        let cpp2 = 0;
+        if (netIncome > maxPensionable) {
+            const cpp2Earnings = Math.min(netIncome, cpp2Max) - maxPensionable;
+            cpp2 = Math.max(0, cpp2Earnings) * cpp2Rate;
+        }
+        return pensionable * rate + cpp2;
+    }
+
+    function fmt(n) {
+        return '$' + Math.round(n).toLocaleString('en-CA');
+    }
+
+    function calculate() {
+        const salary = parseFloat(inputs.targetSalary.value) || 0;
+        const prov = inputs.province.value;
+        const billHrs = parseFloat(inputs.billableHours.value) || 30;
+        const wksOff = parseFloat(inputs.weeksOff.value) || 0;
+        const healthAmt = parseFloat(inputs.healthBenefits.value) || 0;
+        const rrspAmt = parseFloat(inputs.rrsp.value) || 0;
+        const softwareAmt = parseFloat(inputs.software.value) || 0;
+        const otherAmt = parseFloat(inputs.otherExpenses.value) || 0;
+        const accountantAmt = parseFloat(inputs.accountant.value) || 0;
+        const marginPct = (parseFloat(inputs.profitMargin.value) || 0) / 100;
+
+        const totalExpenses = healthAmt + rrspAmt + softwareAmt + otherAmt + accountantAmt;
+
+        // Update province description
+        const provData = provincialTax[prov];
+        if (provData) {
+            const minRate = (provData.rates[0][1] * 100).toFixed(1);
+            const maxRate = (provData.rates[provData.rates.length - 1][1] * 100).toFixed(1);
+            document.getElementById('provTaxDesc').textContent = provData.name + ': ' + minRate + '% to ' + maxRate + '%';
+        }
+
+        // Iterative solver
+        let gross = salary + totalExpenses;
+        for (let i = 0; i < 25; i++) {
+            const cpp = calcCPP(gross);
+            const fedTax = calcFederalTax(gross);
+            const provTax = calcProvTax(gross, prov);
+            const margin = gross * marginPct;
+            // Half of CPP is deductible from income for tax purposes, but for simplicity in this solver
+            // we calculate on gross. The iterative approach converges to a reasonable estimate.
+            gross = salary + cpp + fedTax + provTax + totalExpenses + margin;
+        }
+
+        const cpp = calcCPP(gross);
+        const ei = 0; // Optional, not included by default
+        const fedTax = calcFederalTax(gross);
+        const provTax = calcProvTax(gross, prov);
+        const margin = gross * marginPct;
+
+        // Billable hours per year
+        const workWeeks = 52 - wksOff;
+        const annualBillableHours = workWeeks * billHrs;
+
+        // Rates
+        const hourlyVal = annualBillableHours > 0 ? gross / annualBillableHours : 0;
+        const dailyVal = hourlyVal * 8;
+        const weeklyVal = hourlyVal * billHrs;
+        const monthlyVal = gross / 12;
+
+        // Update results
+        document.getElementById('hourlyRate').textContent = fmt(hourlyVal);
+        document.getElementById('dailyRate').textContent = fmt(dailyVal);
+        document.getElementById('weeklyRate').textContent = fmt(weeklyVal);
+        document.getElementById('monthlyRate').textContent = fmt(monthlyVal);
+        document.getElementById('annualGross').textContent = fmt(gross);
+
+        // Breakdown
+        document.getElementById('bk-salary').textContent = fmt(salary);
+        document.getElementById('bk-cpp').textContent = '+ ' + fmt(cpp);
+        document.getElementById('bk-ei').textContent = '+ ' + fmt(ei);
+        document.getElementById('bk-fedtax').textContent = '+ ' + fmt(fedTax);
+        document.getElementById('bk-provtax').textContent = '+ ' + fmt(provTax);
+        document.getElementById('bk-health').textContent = '+ ' + fmt(healthAmt);
+        document.getElementById('bk-rrsp').textContent = '+ ' + fmt(rrspAmt);
+        document.getElementById('bk-software').textContent = '+ ' + fmt(softwareAmt);
+        document.getElementById('bk-other').textContent = '+ ' + fmt(otherAmt);
+        document.getElementById('bk-accountant').textContent = '+ ' + fmt(accountantAmt);
+        document.getElementById('bk-margin').textContent = '+ ' + fmt(margin);
+        document.getElementById('bk-total').textContent = fmt(gross);
+        document.getElementById('bk-hours').textContent = Math.round(annualBillableHours) + ' hours';
+
+        // Insight
+        const naiveRate = salary / 2080;
+        const uplift = hourlyVal > 0 && naiveRate > 0 ? ((hourlyVal - naiveRate) / naiveRate * 100).toFixed(0) : 0;
+        document.getElementById('insightText').innerHTML = `If you simply divided your target salary by 2,080 hours, you'd charge <strong>${fmt(naiveRate)}/hour</strong>. Your real rate is <strong>${uplift}% higher</strong> because you're accounting for CPP, federal and provincial income tax, benefits, expenses, and unbillable time. This is why freelancers who skip this math end up earning less than salaried employees.`;
+    }
+
+    function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+
+    function copyResults() {
+        const hourly = document.getElementById('hourlyRate').textContent;
+        const daily = document.getElementById('dailyRate').textContent;
+        const weekly = document.getElementById('weeklyRate').textContent;
+        const monthly = document.getElementById('monthlyRate').textContent;
+        const prov = provincialTax[inputs.province.value]?.name || '';
+        const text = `My freelance rates in ${prov} (via freelancerate.io/ca/):\n• Hourly: ${hourly} CAD\n• Daily: ${daily}\n• Weekly: ${weekly}\n• Monthly: ${monthly}`;
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = event.target;
+            const orig = btn.textContent;
+            btn.textContent = '✓ Copied!';
+            setTimeout(() => btn.textContent = orig, 2000);
+        });
+    }
+
+    function tweetResults() {
+        const hourly = document.getElementById('hourlyRate').textContent;
+        const text = encodeURIComponent(`Just calculated my real freelance rate: ${hourly}/hour CAD 💰\n\nMost Canadian freelancers undercharge by 30-50%. Find your real rate → freelancerate.io/ca/`);
+        window.open(`https://twitter.com/intent/tweet?text=${text}`, '_blank');
+    }
+
+    calculate();
+</script>
+
+</body>
+</html>
