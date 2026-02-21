@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Rate Calculator UK — What Should You Charge? | FreelanceRate.io</title>
+    <meta name="description" content="Calculate your ideal freelance rate for the UK. Accounts for National Insurance, Income Tax, IR35, pension, and business expenses. Free forever.">
+    <meta name="keywords" content="freelance rate calculator UK, how much should I charge freelancing UK, freelance hourly rate UK, contractor rate calculator UK, self employed rate calculator, freelance pricing UK">
+    <link rel="canonical" href="https://freelancerate.io/uk/">
+
+    <meta property="og:title" content="Freelance Rate Calculator UK — What Should You Charge?">
+    <meta property="og:description" content="Calculate your ideal freelance day rate or hourly rate for the UK. Accounts for National Insurance, Income Tax, and expenses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://freelancerate.io/uk/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Freelance Rate Calculator UK — What Should You Charge?">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "FreelanceRate.io UK",
+        "description": "Free UK freelance rate calculator accounting for National Insurance, Income Tax, pension, and expenses.",
+        "url": "https://freelancerate.io/uk/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWN9TGEWXH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QWN9TGEWXH');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0C0C0E; --surface: #161619; --surface-2: #1E1E22; --surface-3: #26262B;
+            --border: #2A2A30; --border-hover: #3A3A42; --text: #ECECEE; --text-secondary: #9898A0;
+            --text-muted: #68686F; --accent: #3BF686; --accent-dim: rgba(59, 246, 134, 0.12);
+            --accent-glow: rgba(59, 246, 134, 0.25); --warning: #F6C23B; --danger: #F6503B;
+            --font-display: 'Fraunces', serif; --font-body: 'DM Sans', sans-serif;
+            --radius: 12px; --radius-lg: 20px;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-body); background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+        body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; z-index: 0; }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+        nav { padding: 20px 0; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: rgba(12, 12, 14, 0.85); backdrop-filter: blur(20px); z-index: 100; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
+        .logo span { color: var(--accent); }
+        .nav-right { display: flex; gap: 20px; align-items: center; }
+        nav a.nav-link { color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+        nav a.nav-link:hover { color: var(--accent); }
+        .country-badge { background: var(--accent-dim); border: 1px solid rgba(59, 246, 134, 0.2); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 600; color: var(--accent); letter-spacing: 0.04em; }
+
+        .hero { padding: 80px 0 60px; text-align: center; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-dim); border: 1px solid rgba(59, 246, 134, 0.2); padding: 6px 16px; border-radius: 100px; font-size: 0.8rem; font-weight: 600; color: var(--accent); margin-bottom: 24px; letter-spacing: 0.04em; text-transform: uppercase; }
+        .hero h1 { font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 20px; }
+        .hero h1 em { font-style: italic; color: var(--accent); }
+        .hero p { font-size: 1.15rem; color: var(--text-secondary); max-width: 580px; margin: 0 auto 40px; line-height: 1.7; }
+        .cta-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: var(--bg); font-family: var(--font-body); font-size: 0.95rem; font-weight: 700; padding: 14px 32px; border-radius: 100px; border: none; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; text-decoration: none; }
+        .cta-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(59, 246, 134, 0.25); }
+
+        .calculator { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 60px; }
+        @media (max-width: 640px) { .calculator { padding: 24px 20px; } }
+        .calc-section { margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid var(--border); }
+        .calc-section:last-of-type { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+        .calc-section-title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.02em; }
+        .calc-section-desc { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
+        .form-group { display: flex; flex-direction: column; gap: 6px; }
+        .form-group.full-width { grid-column: 1 / -1; }
+        label { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.06em; }
+        input[type="number"], select { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; font-size: 1rem; font-family: var(--font-body); color: var(--text); transition: border-color 0.2s, box-shadow 0.2s; outline: none; width: 100%; appearance: none; -webkit-appearance: none; }
+        select { background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%239898A0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; }
+        input:focus, select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-dim); }
+        input::placeholder { color: var(--text-muted); }
+        input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+        input[type="number"] { -moz-appearance: textfield; }
+        .input-with-prefix { position: relative; }
+        .input-with-prefix .prefix { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1rem; pointer-events: none; font-weight: 500; }
+        .input-with-prefix input { padding-left: 32px; }
+        .slider-group { display: flex; flex-direction: column; gap: 8px; }
+        .slider-header { display: flex; justify-content: space-between; align-items: center; }
+        .slider-value { font-size: 0.95rem; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
+        input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; background: var(--surface-3); border-radius: 3px; outline: none; cursor: pointer; }
+        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; background: var(--accent); border-radius: 50%; cursor: pointer; box-shadow: 0 2px 8px rgba(59, 246, 134, 0.3); transition: transform 0.15s; }
+        input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+        input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; background: var(--accent); border-radius: 50%; cursor: pointer; border: none; box-shadow: 0 2px 8px rgba(59, 246, 134, 0.3); }
+
+        .results { background: linear-gradient(135deg, rgba(59, 246, 134, 0.06) 0%, rgba(59, 246, 134, 0.02) 100%); border: 1px solid rgba(59, 246, 134, 0.15); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 60px; text-align: center; position: relative; overflow: hidden; }
+        .results::before { content: ''; position: absolute; top: -80px; right: -80px; width: 200px; height: 200px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); pointer-events: none; }
+        .results-title { font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.08em; }
+        .results-main-rate { font-family: var(--font-display); font-size: clamp(3rem, 8vw, 5rem); font-weight: 800; color: var(--accent); line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 4px; }
+        .results-main-label { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 32px; }
+        .results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        @media (max-width: 640px) { .results-grid { grid-template-columns: repeat(2, 1fr); } .results { padding: 28px 20px; } }
+        .result-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 16px; }
+        .result-card-value { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--text); margin-bottom: 2px; font-variant-numeric: tabular-nums; }
+        .result-card-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 500; }
+        .share-bar { display: flex; justify-content: center; gap: 12px; margin-top: 24px; }
+        .share-btn { background: var(--surface-2); border: 1px solid var(--border); color: var(--text-secondary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 500; padding: 8px 18px; border-radius: 100px; cursor: pointer; transition: border-color 0.2s, color 0.2s; }
+        .share-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+        .breakdown { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 60px; }
+        @media (max-width: 640px) { .breakdown { padding: 24px 20px; } }
+        .breakdown h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; margin-bottom: 24px; letter-spacing: -0.02em; }
+        .breakdown-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--border); }
+        .breakdown-row:last-child { border-bottom: none; padding-bottom: 0; }
+        .breakdown-row.total { border-top: 2px solid var(--accent); border-bottom: none; margin-top: 8px; padding-top: 18px; }
+        .breakdown-label { font-size: 0.95rem; color: var(--text-secondary); }
+        .breakdown-label small { display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+        .breakdown-value { font-weight: 600; font-variant-numeric: tabular-nums; font-size: 0.95rem; }
+        .breakdown-value.negative { color: var(--danger); }
+        .breakdown-value.positive { color: var(--accent); }
+        .insight-bar { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin-top: 24px; display: flex; align-items: flex-start; gap: 12px; }
+        .insight-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+        .insight-text { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
+        .insight-text strong { color: var(--text); }
+
+        .how-section { padding: 60px 0; border-top: 1px solid var(--border); }
+        .how-section h2 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em; text-align: center; }
+        .how-section > .container > p { text-align: center; color: var(--text-secondary); max-width: 560px; margin: 0 auto 40px; font-size: 1rem; }
+        .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        @media (max-width: 768px) { .how-grid { grid-template-columns: 1fr; } }
+        .how-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 32px 28px; transition: border-color 0.2s; }
+        .how-card:hover { border-color: var(--border-hover); }
+        .how-card-num { font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: 16px; opacity: 0.4; }
+        .how-card h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+        .how-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
+
+        .faq-section { padding: 60px 0; border-top: 1px solid var(--border); }
+        .faq-section h2 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; margin-bottom: 32px; letter-spacing: -0.02em; text-align: center; }
+        .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+        .faq-q { font-weight: 600; font-size: 1rem; margin-bottom: 8px; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-q::after { content: '+'; font-size: 1.3rem; color: var(--text-muted); flex-shrink: 0; margin-left: 16px; }
+        .faq-item.open .faq-q::after { content: '−'; color: var(--accent); }
+        .faq-a { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .faq-item.open .faq-a { max-height: 400px; padding-top: 4px; }
+
+        .ad-slot { background: var(--surface-2); border: 1px dashed var(--border); border-radius: var(--radius); padding: 24px; text-align: center; margin: 40px 0; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+        .ad-slot-text { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+        .country-nav { display: flex; justify-content: center; gap: 12px; margin: 40px 0; flex-wrap: wrap; }
+        .country-nav a { background: var(--surface); border: 1px solid var(--border); color: var(--text-secondary); font-size: 0.8rem; font-weight: 500; padding: 8px 18px; border-radius: 100px; text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+        .country-nav a:hover, .country-nav a.active { border-color: var(--accent); color: var(--accent); }
+
+        footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; }
+        footer p { font-size: 0.8rem; color: var(--text-muted); }
+        footer a { color: var(--text-secondary); text-decoration: none; }
+        footer a:hover { color: var(--accent); }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-in { animation: fadeInUp 0.5s ease-out both; }
+        .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; } .delay-3 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="/" class="logo">freelancerate<span>.io</span></a>
+        <div class="nav-right">
+            <span class="country-badge">🇬🇧 UK</span>
+            <a href="/" class="nav-link">US Version</a>
+            <a href="#how" class="nav-link">How it works</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge animate-in">🇬🇧 Built for the UK — Free forever</div>
+        <h1 class="animate-in delay-1">What should you<br><em>actually</em> charge?</h1>
+        <p class="animate-in delay-2">Most UK freelancers undercharge by 30–50%. This calculator factors in National Insurance, Income Tax, pension, IR35 considerations, and your real expenses to find your <strong>true</strong> day rate.</p>
+        <a href="#calculator" class="cta-btn animate-in delay-3">Calculate my rate ↓</a>
+    </div>
+</section>
+
+<div class="container">
+    <div class="ad-slot"><span class="ad-slot-text">Ad space</span></div>
+</div>
+
+<div class="container" id="calculator">
+    <div class="calculator animate-in">
+
+        <div class="calc-section">
+            <div class="calc-section-title">💰 Income Goal</div>
+            <div class="calc-section-desc">What do you want to take home annually after tax? Think of the net salary you'd accept at a permanent role.</div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="targetSalary">Target Annual Take-Home</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">£</span>
+                        <input type="number" id="targetSalary" placeholder="45,000" value="45000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="vatRegistered">VAT Registered?</label>
+                    <select id="vatRegistered">
+                        <option value="no">No (under £90,000 threshold)</option>
+                        <option value="yes">Yes (charging VAT)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="calc-section">
+            <div class="calc-section-title">⏱ Working Time</div>
+            <div class="calc-section-desc">Be realistic — you won't bill every day. Account for admin, marketing, gaps between contracts, and unbillable time.</div>
+            <div class="form-grid">
+                <div class="form-group slider-group">
+                    <div class="slider-header">
+                        <label for="billableDays">Billable Days per Week</label>
+                        <span class="slider-value" id="billableDaysValue">4 days</span>
+                    </div>
+                    <input type="range" id="billableDays" min="2" max="5" value="4" step="0.5">
+                </div>
+                <div class="form-group slider-group">
+                    <div class="slider-header">
+                        <label for="weeksOff">Weeks Off per Year</label>
+                        <span class="slider-value" id="weeksOffValue">5 wks</span>
+                    </div>
+                    <input type="range" id="weeksOff" min="0" max="12" value="5">
+                </div>
+                <div class="form-group slider-group full-width">
+                    <div class="slider-header">
+                        <label for="hoursPerDay">Hours per Billable Day</label>
+                        <span class="slider-value" id="hoursPerDayValue">7.5 hrs</span>
+                    </div>
+                    <input type="range" id="hoursPerDay" min="5" max="10" value="7.5" step="0.5">
+                </div>
+            </div>
+        </div>
+
+        <div class="calc-section">
+            <div class="calc-section-title">🏥 Benefits & Expenses</div>
+            <div class="calc-section-desc">As a freelancer, you pay for everything an employer used to cover. No employer pension, no sick pay, no holiday pay.</div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="pension">Pension Contributions / yr</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">£</span>
+                        <input type="number" id="pension" placeholder="5,000" value="5000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="insurance">Insurance (PI, PL, etc.) / yr</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">£</span>
+                        <input type="number" id="insurance" placeholder="1,200" value="1200">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="software">Software & Tools / yr</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">£</span>
+                        <input type="number" id="software" placeholder="2,000" value="2000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="otherExpenses">Other Business Expenses / yr</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">£</span>
+                        <input type="number" id="otherExpenses" placeholder="2,500" value="2500">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="accountant">Accountant Fees / yr</label>
+                    <div class="input-with-prefix">
+                        <span class="prefix">£</span>
+                        <input type="number" id="accountant" placeholder="1,500" value="1500">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calc-section">
+            <div class="calc-section-title">📈 Profit Margin</div>
+            <div class="calc-section-desc">Buffer for gaps between contracts, slow months, and business growth.</div>
+            <div class="form-grid">
+                <div class="form-group slider-group full-width">
+                    <div class="slider-header">
+                        <label for="profitMargin">Profit Margin</label>
+                        <span class="slider-value" id="profitMarginValue">15%</span>
+                    </div>
+                    <input type="range" id="profitMargin" min="0" max="40" value="15">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="results" id="results">
+        <div class="results-title">Your Minimum Freelance Rate</div>
+        <div class="results-main-rate" id="dayRate">£0</div>
+        <div class="results-main-label">per day</div>
+
+        <div class="results-grid">
+            <div class="result-card">
+                <div class="result-card-value" id="hourlyRate">£0</div>
+                <div class="result-card-label">Per Hour</div>
+            </div>
+            <div class="result-card">
+                <div class="result-card-value" id="weeklyRate">£0</div>
+                <div class="result-card-label">Per Week</div>
+            </div>
+            <div class="result-card">
+                <div class="result-card-value" id="monthlyRate">£0</div>
+                <div class="result-card-label">Per Month</div>
+            </div>
+            <div class="result-card">
+                <div class="result-card-value" id="annualGross">£0</div>
+                <div class="result-card-label">Annual Gross</div>
+            </div>
+        </div>
+
+        <div class="share-bar">
+            <button class="share-btn" onclick="copyResults()">📋 Copy results</button>
+            <button class="share-btn" onclick="tweetResults()">𝕏 Share</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="breakdown" id="breakdown">
+        <h2>How We Got There</h2>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Your target take-home pay</span>
+            <span class="breakdown-value" id="bk-salary">£0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Class 2 National Insurance<small>Flat rate: £3.45/week for self-employed</small></span>
+            <span class="breakdown-value negative" id="bk-nic2">+ £0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Class 4 National Insurance<small>6% on profits between £12,570–£50,270, then 2% above</small></span>
+            <span class="breakdown-value negative" id="bk-nic4">+ £0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Income Tax<small>20% basic, 40% higher, 45% additional rate</small></span>
+            <span class="breakdown-value negative" id="bk-incometax">+ £0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Pension contributions</span>
+            <span class="breakdown-value negative" id="bk-pension">+ £0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Insurance</span>
+            <span class="breakdown-value negative" id="bk-insurance">+ £0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Software & tools</span>
+            <span class="breakdown-value negative" id="bk-software">+ £0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Other business expenses</span>
+            <span class="breakdown-value negative" id="bk-other">+ £0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Accountant fees</span>
+            <span class="breakdown-value negative" id="bk-accountant">+ £0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">Profit margin<small>Buffer for gaps, growth, and emergencies</small></span>
+            <span class="breakdown-value negative" id="bk-margin">+ £0</span>
+        </div>
+        <div class="breakdown-row total">
+            <span class="breakdown-label"><strong>Total you need to earn</strong></span>
+            <span class="breakdown-value positive" id="bk-total">£0</span>
+        </div>
+        <div class="breakdown-row">
+            <span class="breakdown-label">÷ Billable days per year</span>
+            <span class="breakdown-value" id="bk-days">0 days</span>
+        </div>
+
+        <div class="insight-bar">
+            <span class="insight-icon">💡</span>
+            <span class="insight-text" id="insightText"></span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="ad-slot"><span class="ad-slot-text">Ad space</span></div>
+</div>
+
+<div class="container">
+    <div class="country-nav">
+        <a href="/" >🇺🇸 United States</a>
+        <a href="/uk/" class="active">🇬🇧 United Kingdom</a>
+    </div>
+</div>
+
+<section class="how-section" id="how">
+    <div class="container">
+        <h2>Why Most UK Freelancers Undercharge</h2>
+        <p>If you just convert a salary to a day rate by dividing by 260 working days, you'll be out of pocket. Here's what you're forgetting.</p>
+        <div class="how-grid">
+            <div class="how-card">
+                <div class="how-card-num">01</div>
+                <h3>National Insurance</h3>
+                <p>As an employee, your employer pays 13.8% Employer's NI on top of your salary. As self-employed, you pay Class 2 and Class 4 NI yourself. On £50K profit that's roughly <strong>£2,700</strong>.</p>
+            </div>
+            <div class="how-card">
+                <div class="how-card-num">02</div>
+                <h3>No Benefits</h3>
+                <p>No employer pension contributions (typically 3–5% of salary), no sick pay, no holiday pay, no parental leave. You fund it all — or go without.</p>
+            </div>
+            <div class="how-card">
+                <div class="how-card-num">03</div>
+                <h3>Unbillable Time</h3>
+                <p>You won't bill 5 days a week, 52 weeks a year. Between finding clients, admin, gaps between contracts, and holidays — most freelancers bill 180–200 days a year, not 260.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section" id="faq">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item open">
+            <div class="faq-q" onclick="toggleFaq(this)">How do I calculate my freelance day rate in the UK?</div>
+            <div class="faq-a">Start with your desired annual take-home pay. Add National Insurance (Class 2 and Class 4), Income Tax, pension contributions, insurance, business expenses, and a profit margin. Then divide by your realistic billable days per year (typically 180–200 days, not 260). This gives you your minimum day rate.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">What is a good freelance day rate in the UK?</div>
+            <div class="faq-a">It varies hugely by industry. UK IT contractors typically charge £350–£700/day, designers £250–£500/day, and consultants £400–£1,000+/day. The key is to calculate YOUR number based on your expenses, taxes, and income goals rather than guessing from market averages.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Do I need to register for VAT?</div>
+            <div class="faq-a">You must register for VAT if your taxable turnover exceeds £90,000 in a 12-month period. Below that threshold, registration is voluntary. Some freelancers register voluntarily because it lets them reclaim VAT on business purchases. If you charge VAT, add 20% on top of your day rate — but remember, that VAT isn't your money; it goes to HMRC.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">What is IR35 and how does it affect my rate?</div>
+            <div class="faq-a">IR35 is legislation that determines whether a contractor is genuinely self-employed or effectively an employee for tax purposes. If you're deemed "inside IR35," you'll pay similar taxes to an employee (PAYE, Employee NI) and your take-home will be significantly lower. Many contractors inside IR35 increase their day rate by 15–25% to compensate. Our calculator assumes you're operating outside IR35 as a sole trader.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">How many days a year can I realistically bill?</div>
+            <div class="faq-a">Most UK freelancers bill 180–210 days per year. Start with 260 working days, subtract 28 days holiday (the statutory minimum for employees), subtract 5–10 days for sickness, and subtract 20–40 days for gaps between contracts, admin, and business development. That typically leaves 180–200 billable days.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Should I operate as a sole trader or limited company?</div>
+            <div class="faq-a">As a sole trader, tax is simpler — you pay Income Tax and Class 2/4 NI on your profits. As a limited company, you can pay yourself a combination of salary and dividends, which can be more tax-efficient above roughly £40,000–£50,000 profit. However, limited companies have more admin, accountancy costs, and reporting requirements. Speak with an accountant about which structure suits your situation.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="ad-slot"><span class="ad-slot-text">Ad space</span></div>
+</div>
+
+<footer>
+    <div class="container">
+        <p style="margin-bottom: 8px;"><a href="/" class="logo" style="font-size: 1rem;">freelancerate<span style="color: var(--accent);">.io</span></a></p>
+        <p>Free freelance rate calculator. No signup. No tracking. Just maths.</p>
+        <p style="margin-top: 12px;">© <span id="year"></span> FreelanceRate.io · <a href="/">US</a> · <a href="/uk/">UK</a></p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const inputs = {
+        targetSalary: document.getElementById('targetSalary'),
+        vatRegistered: document.getElementById('vatRegistered'),
+        billableDays: document.getElementById('billableDays'),
+        weeksOff: document.getElementById('weeksOff'),
+        hoursPerDay: document.getElementById('hoursPerDay'),
+        pension: document.getElementById('pension'),
+        insurance: document.getElementById('insurance'),
+        software: document.getElementById('software'),
+        otherExpenses: document.getElementById('otherExpenses'),
+        accountant: document.getElementById('accountant'),
+        profitMargin: document.getElementById('profitMargin'),
+    };
+
+    inputs.billableDays.addEventListener('input', () => {
+        document.getElementById('billableDaysValue').textContent = inputs.billableDays.value + ' days';
+        calculate();
+    });
+    inputs.weeksOff.addEventListener('input', () => {
+        document.getElementById('weeksOffValue').textContent = inputs.weeksOff.value + ' wks';
+        calculate();
+    });
+    inputs.hoursPerDay.addEventListener('input', () => {
+        document.getElementById('hoursPerDayValue').textContent = inputs.hoursPerDay.value + ' hrs';
+        calculate();
+    });
+    inputs.profitMargin.addEventListener('input', () => {
+        document.getElementById('profitMarginValue').textContent = inputs.profitMargin.value + '%';
+        calculate();
+    });
+
+    Object.values(inputs).forEach(el => {
+        el.addEventListener('input', calculate);
+        el.addEventListener('change', calculate);
+    });
+
+    // UK Income Tax 2024/25 rates
+    function calcUKIncomeTax(taxableIncome) {
+        const personalAllowance = 12570;
+        // PA tapers above £100K — reduce by £1 for every £2 over £100K
+        let pa = personalAllowance;
+        if (taxableIncome > 100000) {
+            pa = Math.max(0, personalAllowance - (taxableIncome - 100000) / 2);
+        }
+
+        const taxable = Math.max(0, taxableIncome - pa);
+        let tax = 0;
+
+        // Basic rate: 20% up to £37,700
+        const basicBand = 37700;
+        // Higher rate: 40% from £37,701 to £125,140
+        const higherBand = 125140 - personalAllowance;
+        // Additional rate: 45% above £125,140
+
+        if (taxable <= basicBand) {
+            tax = taxable * 0.20;
+        } else if (taxable <= higherBand) {
+            tax = basicBand * 0.20 + (taxable - basicBand) * 0.40;
+        } else {
+            tax = basicBand * 0.20 + (higherBand - basicBand) * 0.40 + (taxable - higherBand) * 0.45;
+        }
+
+        return tax;
+    }
+
+    // Class 4 NI 2024/25
+    function calcClass4NI(profits) {
+        const lowerLimit = 12570;
+        const upperLimit = 50270;
+        let ni = 0;
+
+        if (profits > lowerLimit) {
+            const basicBand = Math.min(profits, upperLimit) - lowerLimit;
+            ni += basicBand * 0.06; // 6% between limits
+        }
+        if (profits > upperLimit) {
+            ni += (profits - upperLimit) * 0.02; // 2% above upper limit
+        }
+        return ni;
+    }
+
+    // Class 2 NI 2024/25
+    function calcClass2NI(profits) {
+        // £3.45/week if profits above £12,570
+        if (profits > 12570) {
+            return 3.45 * 52;
+        }
+        return 0;
+    }
+
+    function fmt(n) {
+        return '£' + Math.round(n).toLocaleString('en-GB');
+    }
+
+    function calculate() {
+        const salary = parseFloat(inputs.targetSalary.value) || 0;
+        const billDays = parseFloat(inputs.billableDays.value) || 4;
+        const wksOff = parseFloat(inputs.weeksOff.value) || 0;
+        const hrsPerDay = parseFloat(inputs.hoursPerDay.value) || 7.5;
+        const pensionAmt = parseFloat(inputs.pension.value) || 0;
+        const insuranceAmt = parseFloat(inputs.insurance.value) || 0;
+        const softwareAmt = parseFloat(inputs.software.value) || 0;
+        const otherAmt = parseFloat(inputs.otherExpenses.value) || 0;
+        const accountantAmt = parseFloat(inputs.accountant.value) || 0;
+        const marginPct = (parseFloat(inputs.profitMargin.value) || 0) / 100;
+
+        const totalExpenses = pensionAmt + insuranceAmt + softwareAmt + otherAmt + accountantAmt;
+
+        // Iterative solver: find gross income needed
+        let gross = salary + totalExpenses;
+        for (let i = 0; i < 25; i++) {
+            const class2 = calcClass2NI(gross);
+            const class4 = calcClass4NI(gross);
+            const incomeTax = calcUKIncomeTax(gross);
+            const margin = gross * marginPct;
+            const needed = salary + class2 + class4 + incomeTax + totalExpenses + margin;
+            gross = needed;
+        }
+
+        const class2 = calcClass2NI(gross);
+        const class4 = calcClass4NI(gross);
+        const incomeTax = calcUKIncomeTax(gross);
+        const margin = gross * marginPct;
+
+        // Billable days per year
+        const workWeeks = 52 - wksOff;
+        const annualBillableDays = workWeeks * billDays;
+
+        // Rates
+        const dayRateVal = annualBillableDays > 0 ? gross / annualBillableDays : 0;
+        const hourlyVal = hrsPerDay > 0 ? dayRateVal / hrsPerDay : 0;
+        const weeklyVal = dayRateVal * billDays;
+        const monthlyVal = gross / 12;
+
+        // Update results
+        document.getElementById('dayRate').textContent = fmt(dayRateVal);
+        document.getElementById('hourlyRate').textContent = fmt(hourlyVal);
+        document.getElementById('weeklyRate').textContent = fmt(weeklyVal);
+        document.getElementById('monthlyRate').textContent = fmt(monthlyVal);
+        document.getElementById('annualGross').textContent = fmt(gross);
+
+        // Breakdown
+        document.getElementById('bk-salary').textContent = fmt(salary);
+        document.getElementById('bk-nic2').textContent = '+ ' + fmt(class2);
+        document.getElementById('bk-nic4').textContent = '+ ' + fmt(class4);
+        document.getElementById('bk-incometax').textContent = '+ ' + fmt(incomeTax);
+        document.getElementById('bk-pension').textContent = '+ ' + fmt(pensionAmt);
+        document.getElementById('bk-insurance').textContent = '+ ' + fmt(insuranceAmt);
+        document.getElementById('bk-software').textContent = '+ ' + fmt(softwareAmt);
+        document.getElementById('bk-other').textContent = '+ ' + fmt(otherAmt);
+        document.getElementById('bk-accountant').textContent = '+ ' + fmt(accountantAmt);
+        document.getElementById('bk-margin').textContent = '+ ' + fmt(margin);
+        document.getElementById('bk-total').textContent = fmt(gross);
+        document.getElementById('bk-days').textContent = Math.round(annualBillableDays) + ' days';
+
+        // Insight
+        const naiveRate = salary / 260;
+        const uplift = dayRateVal > 0 && naiveRate > 0 ? ((dayRateVal - naiveRate) / naiveRate * 100).toFixed(0) : 0;
+        document.getElementById('insightText').innerHTML = `If you simply divided your target salary by 260 working days, you'd charge <strong>${fmt(naiveRate)}/day</strong>. Your real day rate is <strong>${uplift}% higher</strong> because you're accounting for National Insurance, Income Tax, pension, expenses, and unbillable time. This is why freelancers who skip this maths end up earning less than permanent employees.`;
+    }
+
+    function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+
+    function copyResults() {
+        const day = document.getElementById('dayRate').textContent;
+        const hourly = document.getElementById('hourlyRate').textContent;
+        const weekly = document.getElementById('weeklyRate').textContent;
+        const monthly = document.getElementById('monthlyRate').textContent;
+        const text = `My freelance rates (via freelancerate.io/uk/):\n• Day rate: ${day}\n• Hourly: ${hourly}\n• Weekly: ${weekly}\n• Monthly: ${monthly}`;
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = event.target;
+            const orig = btn.textContent;
+            btn.textContent = '✓ Copied!';
+            setTimeout(() => btn.textContent = orig, 2000);
+        });
+    }
+
+    function tweetResults() {
+        const day = document.getElementById('dayRate').textContent;
+        const text = encodeURIComponent(`Just calculated my real freelance day rate: ${day}/day 💰\n\nMost UK freelancers undercharge by 30-50%. Find your real rate → freelancerate.io/uk/`);
+        window.open(`https://twitter.com/intent/tweet?text=${text}`, '_blank');
+    }
+
+    calculate();
+</script>
+
+</body>
+</html>
