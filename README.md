@@ -1,0 +1,2 @@
+# freelancerate
+Freelance Calculator
