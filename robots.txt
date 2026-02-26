@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://freelancerate.io/sitemap.xml
+Sitemap: https://www.freelancerate.io/sitemap.xml
